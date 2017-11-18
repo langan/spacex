@@ -24,8 +24,7 @@ install:
   - npm install
 
 script:
-  - ng test --single-run
-  - ng build --prod
+  - ./scripts/ci/build-and-test.sh
 
 deploy:
   provider: pages
